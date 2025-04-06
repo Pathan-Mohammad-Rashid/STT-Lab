@@ -1,0 +1,15 @@
+Overall Analysis Report
+========================================
+
+RQ1: High Severity Vulnerabilities Over Time
+--------------------------------------------------
+A line plot ('RQ1_high_severity_over_time.png') has been generated, showing the trend of high severity issues over time.
+
+RQ2: Vulnerability Trends by Severity
+--------------------------------------------------
+A multi-line plot ('RQ2_vulnerability_trends_by_severity.png') has been generated, comparing LOW, MEDIUM, and HIGH severity issues over time.
+
+RQ3: Top 10 Most Frequent CWEs
+--------------------------------------------------
+A bar chart ('RQ3_top_cwes.png') has been generated, showing the top 10 most frequent CWE identifiers.
+The top CWEs are:
