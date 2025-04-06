@@ -1,0 +1,413 @@
+============================= test session starts ==============================
+platform linux -- Python 3.10.11, pytest-8.3.5, pluggy-1.5.0
+rootdir: /home/set-iitgn-vm/Desktop/stt_lab6-7/lab5/algorithms
+plugins: cov-6.0.0, func-cov-0.2.3
+collected 387 items / 1 error
+
+==================================== ERRORS ====================================
+_____________________ ERROR collecting tests/test_array.py _____________________
+../new_venv/lib/python3.10/site-packages/_pytest/python.py:493: in importtestmodule
+    mod = import_path(
+../new_venv/lib/python3.10/site-packages/_pytest/pathlib.py:587: in import_path
+    importlib.import_module(module_name)
+/usr/local/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+<frozen importlib._bootstrap>:1050: in _gcd_import
+    ???
+<frozen importlib._bootstrap>:1027: in _find_and_load
+    ???
+<frozen importlib._bootstrap>:1006: in _find_and_load_unlocked
+    ???
+<frozen importlib._bootstrap>:688: in _load_unlocked
+    ???
+../new_venv/lib/python3.10/site-packages/_pytest/assertion/rewrite.py:176: in exec_module
+    source_stat, co = _rewrite_test(fn, self.config)
+../new_venv/lib/python3.10/site-packages/_pytest/assertion/rewrite.py:356: in _rewrite_test
+    tree = ast.parse(source, filename=strfn)
+/usr/local/lib/python3.10/ast.py:50: in parse
+    return compile(source, filename, mode, flags,
+E     File "/home/set-iitgn-vm/Desktop/stt_lab6-7/lab5/algorithms/tests/test_array.py", line 13
+E       rotate_v1, rotate_v2, rotate_v3,
+E       ^^^^^^^^^
+E   SyntaxError: invalid syntax
+=============================== warnings summary ===============================
+algorithms/strings/validate_coordinates.py:49
+  /home/set-iitgn-vm/Desktop/stt_lab6-7/lab5/algorithms/algorithms/strings/validate_coordinates.py:49: DeprecationWarning: invalid escape sequence '\d'
+    return bool(re.match("-?(\d|[1-8]\d|90)\.?\d*, -?(\d|[1-9]\d|1[0-7]\d|180)\.?\d*$", coordinates))
+
+algorithms/tree/construct_tree_postorder_preorder.py:1
+  /home/set-iitgn-vm/Desktop/stt_lab6-7/lab5/algorithms/algorithms/tree/construct_tree_postorder_preorder.py:1: DeprecationWarning: invalid escape sequence '\ '
+    """
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+
+---------- coverage: platform linux, python 3.10.11-final-0 ----------
+Name                                                         Stmts   Miss  Cover   Missing
+------------------------------------------------------------------------------------------
+algorithms/arrays/delete_nth.py                                 15     15     0%   9-32
+algorithms/arrays/flatten.py                                    14     14     0%   6-31
+algorithms/arrays/garage.py                                     18     18     0%   35-58
+algorithms/arrays/josephus.py                                    8      8     0%   12-19
+algorithms/arrays/limit.py                                       8      8     0%   16-25
+algorithms/arrays/longest_non_repeat.py                         63     63     0%   14-109
+algorithms/arrays/max_ones_index.py                             16     16     0%   19-43
+algorithms/arrays/merge_intervals.py                            48     48     0%   8-77
+algorithms/arrays/missing_ranges.py                             12     12     0%   6-22
+algorithms/arrays/move_zeros.py                                 10     10     0%   12-26
+algorithms/arrays/n_sum.py                                      64     64     0%   34-140
+algorithms/arrays/plus_one.py                                   30     30     0%   10-48
+algorithms/arrays/remove_duplicates.py                           6      6     0%   11-18
+algorithms/arrays/rotate.py                                     28     28     0%   13-61
+algorithms/arrays/summarize_ranges.py                           14     14     0%   9-24
+algorithms/arrays/three_sum.py                                  21     21     0%   18-48
+algorithms/arrays/top_1.py                                      14     14     0%   15-36
+algorithms/arrays/trimmean.py                                    9      9     0%   14-24
+algorithms/arrays/two_sum.py                                     7      7     0%   16-23
+algorithms/automata/dfa.py                                      12     11     8%   3-17
+algorithms/backtrack/add_operators.py                           20     19     5%   22-45
+algorithms/backtrack/anagram.py                                 10      9    10%   11-22
+algorithms/backtrack/array_sum_combinations.py                  47     43     9%   22-56, 69-84
+algorithms/backtrack/combination_sum.py                         13     12     8%   21-33
+algorithms/backtrack/factor_combinations.py                     19     17    11%   41-49, 55-63
+algorithms/backtrack/find_words.py                              27     26     4%   19-73
+algorithms/backtrack/generate_abbreviations.py                  14     13     7%   10-26
+algorithms/backtrack/generate_parenthesis.py                    23     21     9%   18-29, 33-43
+algorithms/backtrack/letter_combination.py                      12     11     8%   21-40
+algorithms/backtrack/palindrome_partitioning.py                 20     17    15%   13-21, 38-45
+algorithms/backtrack/pattern_match.py                           17     16     6%   23-42
+algorithms/backtrack/permute.py                                 24     21    12%   21-28, 35-40, 45-54
+algorithms/backtrack/permute_unique.py                          11     10     9%   16-25
+algorithms/backtrack/subsets.py                                 17     14    18%   26-39, 56-59
+algorithms/backtrack/subsets_unique.py                          11     10     9%   23-37
+algorithms/bfs/count_islands.py                                 23     22     4%   41-65
+algorithms/bfs/maze_search.py                                   27     24    11%   30-66
+algorithms/bfs/shortest_distance_from_all_buildings.py          27     23    15%   10-28, 31-40
+algorithms/bfs/word_ladder.py                                   32     30     6%   32-64, 68-72
+algorithms/bit/add_bitwise_operator.py                           6      5    17%   10-14
+algorithms/bit/binary_gap.py                                    28      0   100%
+algorithms/bit/bit_operation.py                                 14      6    57%   15, 22, 28-29, 36-37
+algorithms/bit/bytes_int_conversion.py                          26     21    19%   5-10, 14-18, 22-26, 30-35
+algorithms/bit/count_flips_to_convert.py                         7      6    14%   12-19
+algorithms/bit/count_ones.py                                    10      8    20%   20-22, 28-32
+algorithms/bit/find_difference.py                                6      4    33%   23-28
+algorithms/bit/find_missing_number.py                           12     10    17%   13-18, 23-27
+algorithms/bit/flip_bit_longest_sequence.py                     15     14     7%   12-30
+algorithms/bit/has_alternative_bit.py                           16     14    12%   21-32, 36-38
+algorithms/bit/insert_bit.py                                    13     10    23%   32-37, 40-44
+algorithms/bit/power_of_two.py                                   2      1    50%   9
+algorithms/bit/remove_bit.py                                     5      4    20%   12-15
+algorithms/bit/reverse_bits.py                                   8      7    12%   10-16
+algorithms/bit/single_number2.py                                 6      5    17%   23-27
+algorithms/bit/single_number3.py                                11     10     9%   35-49
+algorithms/bit/single_number.py                                  5      4    20%   20-23
+algorithms/bit/subsets.py                                        9      7    22%   26-34
+algorithms/bit/swap_pair.py                                      5      3    40%   18-21
+algorithms/compression/elias.py                                 18     11    39%   18-19, 23, 32-41, 47, 53
+algorithms/compression/huffman_coding.py                       217    170    22%   14-17, 20, 23, 26, 29, 32, 37-39, 42-43, 51-73, 81-85, 93-102, 105-109, 112-118, 123-125, 128, 131-132, 135-142, 150-167, 175-183, 186-189, 198-200, 208-220, 223-224, 229, 233-240, 244-259, 263-275, 279-283, 287-298, 302-304, 308-317, 321-328
+algorithms/compression/rle_compression.py                       22     20     9%   16-36, 46-58
+algorithms/dfs/all_factors.py                                   33     30     9%   40-60, 76-84, 98-111
+algorithms/dfs/count_islands.py                                 18     16    11%   26-32, 36-44
+algorithms/dfs/maze_search.py                                   22     20     9%   25-26, 30-55
+algorithms/dfs/pacific_atlantic.py                              29     27     7%   37-54, 57-65
+algorithms/dfs/sudoku_solver.py                                 59     52    12%   25-28, 31-45, 48-58, 61-71, 74-80, 90-95
+algorithms/dfs/walls_and_gates.py                               15     13    13%   23-26, 30-38
+algorithms/distribution/histogram.py                             5      4    20%   24-28
+algorithms/dp/buy_sell_stock.py                                 12     10    17%   29-33, 44-48
+algorithms/dp/climbing_stairs.py                                10      8    20%   19-22, 33-36
+algorithms/dp/coin_change.py                                     6      5    17%   27-34
+algorithms/dp/combination_sum.py                                22     18    18%   39-46, 57-59, 68-74
+algorithms/dp/edit_distance.py                                  12     11     8%   54-69
+algorithms/dp/egg_drop.py                                       16     14    12%   36-58
+algorithms/dp/fib.py                                            23     20    13%   34-38, 57-62, 79-90
+algorithms/dp/hosoya_triangle.py                                21     18    14%   27-35, 42-45, 52-56
+algorithms/dp/house_robber.py                                    5      4    20%   16-19
+algorithms/dp/int_divide.py                                     11     10     9%   45-55
+algorithms/dp/job_scheduling.py                                 28     24    14%   11-13, 25-38, 47-68
+algorithms/dp/k_factor.py                                       30     29     3%   40-85
+algorithms/dp/knapsack.py                                       10      7    30%   18-19, 23-27
+algorithms/dp/longest_common_subsequence.py                     12     12     0%   25-46
+algorithms/dp/longest_increasing.py                             61     58     5%   31-38, 51-78, 89-117
+algorithms/dp/matrix_chain_order.py                             30     25    17%   15-28, 38-44, 51-58, 61
+algorithms/dp/max_product_subarray.py                           30     26    13%   16-22, 42-66
+algorithms/dp/max_subarray.py                                    9      0   100%
+algorithms/dp/min_cost_path.py                                  15     12    20%   35-45, 49-58
+algorithms/dp/num_decodings.py                                  23     21     9%   25-33, 41-56
+algorithms/dp/planting_trees.py                                 15     13    13%   27-49
+algorithms/dp/regex_matching.py                                 14     13     7%   29-61
+algorithms/dp/rod_cut.py                                        12      0   100%
+algorithms/dp/word_break.py                                     13     11    15%   27-34, 38-41
+algorithms/graph/all_pairs_shortest_path.py                     10      8    20%   33-42
+algorithms/graph/bellman_ford.py                                20     18    10%   21-38, 44-48
+algorithms/graph/check_bipartite.py                             17     16     6%   14-40
+algorithms/graph/check_digraph_strongly_connected.py            30     22    27%   20-21, 27, 33-37, 43-46, 52-58, 65-69
+algorithms/graph/clone_graph.py                                 56     56     0%   29-123
+algorithms/graph/count_connected_number_of_component.py         24     20    17%   25-28, 36-42, 48-55, 59
+algorithms/graph/cycle_detection.py                             20     13    35%   28-35, 50-55
+algorithms/graph/dijkstra.py                                    26     22    15%   11-12, 18-25, 31-49
+algorithms/graph/find_all_cliques.py                            22     22     0%   7-42
+algorithms/graph/find_path.py                                   38     35     8%   10-19, 26-37, 43-55
+algorithms/graph/graph.py                                       65     44    32%   12, 19-23, 26, 29, 32, 35, 38, 41, 44, 47, 50, 59-60, 63-65, 68, 78-89, 95-100, 106-111
+algorithms/graph/markov_chain.py                                16     16     0%   12-39
+algorithms/graph/maximum_flow.py                               100     93     7%   20-31, 39-49, 57-90, 97-107, 114-127, 135-149
+algorithms/graph/maximum_flow_bfs.py                            33     29    12%   33-87
+algorithms/graph/maximum_flow_dfs.py                            32     29     9%   33-87
+algorithms/graph/minimum_spanning_tree.py                       49     49     0%   5-151
+algorithms/graph/path_between_two_vertices_in_digraph.py        23     16    30%   14-16, 22, 28-29, 37-43, 49-51
+algorithms/graph/prims_minimum_spanning.py                      17     15    12%   24-42
+algorithms/graph/satisfiability.py                              70     70     0%   16-145
+algorithms/graph/strongly_connected_components_kosaraju.py      33     28    15%   17-23, 27-49, 70-77, 81
+algorithms/graph/tarjan.py                                      34     30    12%   15-27, 34-65
+algorithms/graph/transitive_closure_dfs.py                      18     18     0%   7-55
+algorithms/graph/traversal.py                                   28     28     0%   10-48
+algorithms/greedy/max_contiguous_subsequence_sum.py             12     11     8%   26-42
+algorithms/heap/binary_heap.py                                  47     26    45%   66-67, 70-74, 85-89, 94-98, 101-106, 116-122
+algorithms/heap/k_closest_points.py                             12      9    25%   22-43, 48
+algorithms/heap/merge_sorted_k_lists.py                         32     25    22%   15-16, 21-33, 38-49
+algorithms/heap/skyline.py                                      17     15    12%   45-60
+algorithms/heap/sliding_window_max.py                           14     12    14%   29-41
+algorithms/linkedlist/add_two_numbers.py                        83     83     0%   14-132
+algorithms/linkedlist/copy_random_pointer.py                    27     22    19%   12-14, 22-31, 40-48
+algorithms/linkedlist/delete_node.py                            33     33     0%   9-63
+algorithms/linkedlist/first_cyclic_node.py                      34     34     0%   9-64
+algorithms/linkedlist/intersection.py                           57     57     0%   12-101
+algorithms/linkedlist/is_cyclic.py                              15     12    20%   10-11, 18-27
+algorithms/linkedlist/is_palindrome.py                          60     57     5%   2-25, 29-49, 65-89
+algorithms/linkedlist/is_sorted.py                               9      8    11%   12-19
+algorithms/linkedlist/kth_to_last.py                            82     82     0%   1-120
+algorithms/linkedlist/linkedlist.py                              9      9     0%   14-24
+algorithms/linkedlist/merge_two_list.py                         23     19    17%   12-13, 16-26, 30-37
+algorithms/linkedlist/partition.py                              49     49     0%   15-76
+algorithms/linkedlist/remove_duplicates.py                      48     48     0%   1-66
+algorithms/linkedlist/remove_range.py                           13     12     8%   13-28
+algorithms/linkedlist/reverse.py                                18     16    11%   17-25, 37-43
+algorithms/linkedlist/rotate_list.py                            15     14     7%   23-39
+algorithms/linkedlist/swap_in_pairs.py                          18     15    17%   14-15, 18-30
+algorithms/map/hashtable.py                                     75     57    24%   17-20, 23-42, 45-57, 60-75, 78, 84, 87, 90, 93, 96, 103, 106-109, 112-119
+algorithms/map/is_anagram.py                                     8      7    12%   23-29
+algorithms/map/is_isomorphic.py                                 14     13     7%   27-40
+algorithms/map/longest_common_subsequence.py                    18     18     0%   9-28
+algorithms/map/longest_palindromic_subsequence.py               24     23     4%   3-29
+algorithms/map/randomized_set.py                                35     35     0%   12-53
+algorithms/map/separate_chaining_hashtable.py                   54     40    26%   6-8, 30-32, 35-46, 49-55, 58-69, 72, 75, 78, 81, 84
+algorithms/map/valid_sudoku.py                                   7      7     0%   8-14
+algorithms/map/word_pattern.py                                  15     14     7%   26-40
+algorithms/maths/base_conversion.py                             26     23    12%   17-30, 41-49
+algorithms/maths/chinese_remainder_theorem.py                   29     25    14%   20-39, 42-46
+algorithms/maths/combination.py                                 13     11    15%   6-8, 12-19
+algorithms/maths/cosine_similarity.py                           17     14    18%   15-19, 28-43
+algorithms/maths/decimal_to_binary_ip.py                        16     14    12%   15-25, 31-35
+algorithms/maths/diffie_hellman_key_exchange.py                 90     72    20%   17-28, 38-47, 60-68, 79-91, 110, 117, 124, 131, 138, 145, 150-184
+algorithms/maths/euler_totient.py                               10      9    10%   10-18
+algorithms/maths/extended_gcd.py                                10      9    10%   13-24
+algorithms/maths/factorial.py                                   24     22     8%   8-19, 26-35
+algorithms/maths/fft.py                                         13     11    15%   18-32
+algorithms/maths/find_order_simple.py                           11      9    18%   18-27
+algorithms/maths/find_primitive_root_simple.py                  36     29    19%   17-26, 38-46, 55-67
+algorithms/maths/gcd.py                                         33     27    18%   12-24, 28, 42-46, 54-63
+algorithms/maths/generate_strobogrammtic.py                     46     42     9%   17, 20-33, 41-53, 56-69
+algorithms/maths/hailstone.py                                    8      7    12%   14-21
+algorithms/maths/is_strobogrammatic.py                          12     10    17%   17-25, 30
+algorithms/maths/krishnamurthy_number.py                        15     13    13%   23-27, 31-46
+algorithms/maths/magic_number.py                                 9      8    11%   18-33
+algorithms/maths/modular_exponential.py                         11     10     9%   5-18
+algorithms/maths/modular_inverse.py                             15     13    13%   11-22, 31-34
+algorithms/maths/next_bigger.py                                 26     26     0%   22-64
+algorithms/maths/next_perfect_square.py                          8      6    25%   9-12, 16-17
+algorithms/maths/nth_digit.py                                   12     12     0%   1-17
+algorithms/maths/num_digits.py                                   6      4    33%   9-12
+algorithms/maths/num_perfect_squares.py                         12     10    17%   23-47
+algorithms/maths/polynomial.py                                 260    223    14%   34-52, 60-64, 73-75, 84-98, 106, 120-139, 152-157, 166-173, 181, 188-189, 196-197, 206-214, 230-235, 242, 250-260, 267-283, 309-317, 325-329, 338-361, 370-395, 404-428, 436, 446-462, 471, 478-483, 489, 497-505, 514-525, 532
+algorithms/maths/power.py                                       23     21     9%   15-24, 37-48
+algorithms/maths/prime_check.py                                 13     12     8%   6-17
+algorithms/maths/primes_sieve_of_eratosthenes.py                15     14     7%   31-45
+algorithms/maths/pythagoras.py                                  11     10     9%   11-20
+algorithms/maths/rabin_miller.py                                26     24     8%   12-51
+algorithms/maths/recursive_binomial_coefficient.py               8      8     0%   1-26
+algorithms/maths/rsa.py                                         39     35    10%   40-85, 89, 93
+algorithms/maths/sqrt_precision_factor.py                        5      5     0%   12-19
+algorithms/maths/summing_digits.py                              15     15     0%   13-34
+algorithms/maths/symmetry_group_cycle_index.py                  38     38     0%   61-159
+algorithms/matrix/bomb_enemy.py                                 44     35    20%   22-41, 46-52, 57-63, 77-80, 83-94, 98
+algorithms/matrix/cholesky_matrix_decomposition.py              21     19    10%   33-51
+algorithms/matrix/copy_transform.py                             52     47    10%   2-10, 14-22, 26-34, 38-46, 50-66
+algorithms/matrix/count_paths.py                                17     17     0%   13-39
+algorithms/matrix/crout_matrix_decomposition.py                 19     18     5%   31-48
+algorithms/matrix/matrix_exponentiation.py                      20     17    15%   6-14, 22-27, 37-43
+algorithms/matrix/matrix_inversion.py                           68     61    10%   29-63, 68-77, 82-90, 98-104, 109-114, 118-124
+algorithms/matrix/multiply.py                                   11     10     9%   16-28
+algorithms/matrix/rotate_image.py                               13     11    15%   18-24, 28-33
+algorithms/matrix/search_in_sorted_matrix.py                    17     17     0%   9-35
+algorithms/matrix/sort_matrix_diagonally.py                     36     33     8%   27-77
+algorithms/matrix/sparse_dot_vector.py                          41     36    12%   13, 18-35, 39, 45-67, 71-72
+algorithms/matrix/sparse_mul.py                                 61     61     0%   27-108
+algorithms/matrix/spiral_traversal.py                           27     25     7%   18-45, 49-52
+algorithms/matrix/sudoku_validator.py                           54     50     7%   18-44, 49-71, 76-91
+algorithms/matrix/sum_sub_squares.py                            15     14     7%   5-23
+algorithms/ml/nearest_neighbor.py                               20     17    15%   12-19, 33-41
+algorithms/queues/max_sliding_window.py                         13     11    15%   24-34
+algorithms/queues/moving_average.py                             14     14     0%   1-29
+algorithms/queues/priority_queue.py                             30     20    33%   11-12, 15, 22-28, 31, 36, 42-49, 55
+algorithms/queues/queue.py                                      91     63    31%   21, 24, 27, 31, 35, 39, 43, 54-57, 60-65, 68-72, 75-81, 85-87, 93, 98-99, 105-107, 110-115, 118-125, 128-137, 141-143
+algorithms/queues/reconstruct_queue.py                           6      5    17%   23-27
+algorithms/queues/zigzagiterator.py                             19     19     0%   1-34
+algorithms/search/binary_search.py                              20     18    10%   24-35, 45-52
+algorithms/search/find_min_rotate.py                            16     14    12%   13-22, 28-33
+algorithms/search/first_occurrence.py                           11     10     9%   12-23
+algorithms/search/interpolation_search.py                       15     12    20%   36-56, 60-61
+algorithms/search/jump_search.py                                18     16    11%   20-45
+algorithms/search/last_occurrence.py                             9      8    11%   11-20
+algorithms/search/linear_search.py                               5      4    20%   12-15
+algorithms/search/next_greatest_letter.py                       21     17    19%   33-34, 40-51, 57-60
+algorithms/search/search_insert.py                               9      8    11%   16-24
+algorithms/search/search_range.py                               12     11     8%   18-33
+algorithms/search/search_rotate.py                              27     25     7%   44-61, 69-80
+algorithms/search/ternary_search.py                             15     14     7%   21-42
+algorithms/search/two_sum.py                                    29     26    10%   26-38, 47-52, 61-71
+algorithms/set/find_keyboard_row.py                              8      7    12%   17-27
+algorithms/set/randomized_set.py                                40     40     0%   13-70
+algorithms/set/set_covering.py                                  53     53     0%   1-115
+algorithms/sort/bitonic_sort.py                                 24     23     4%   12-43
+algorithms/sort/bogo_sort.py                                    19     17    11%   10-32
+algorithms/sort/bubble_sort.py                                  20     19     5%   14-35
+algorithms/sort/bucket_sort.py                                  19     17    11%   7-17, 21-28
+algorithms/sort/cocktail_shaker_sort.py                         19     18     5%   12-30
+algorithms/sort/comb_sort.py                                    20     19     5%   11-32
+algorithms/sort/counting_sort.py                                18     17     6%   12-36
+algorithms/sort/cycle_sort.py                                   22     21     5%   13-46
+algorithms/sort/exchange_sort.py                                 7      6    14%   6-11
+algorithms/sort/gnome_sort.py                                    9      8    11%   11-19
+algorithms/sort/heap_sort.py                                    51     47     8%   5-15, 21-45, 51-58, 66-92
+algorithms/sort/insertion_sort.py                               15     14     7%   6-25
+algorithms/sort/meeting_rooms.py                                 6      6     0%   12-21
+algorithms/sort/merge_sort.py                                   19     17    11%   6-15, 23-37
+algorithms/sort/pancake_sort.py                                 11     10     9%   12-25
+algorithms/sort/pigeonhole_sort.py                              14     13     7%   13-28
+algorithms/sort/quick_sort.py                                   23     20    13%   6-10, 13-23, 26-32
+algorithms/sort/radix_sort.py                                   21     20     5%   6-31
+algorithms/sort/selection_sort.py                               14     13     7%   5-23
+algorithms/sort/shell_sort.py                                   15     14     7%   5-21
+algorithms/sort/sort_colors.py                                  15     15     0%   14-30
+algorithms/sort/stooge_sort.py                                  18     16    11%   12-35, 39-43
+algorithms/sort/top_sort.py                                     52     49     6%   7-24, 30-66
+algorithms/sort/wiggle_sort.py                                   9      9     0%   4-14
+algorithms/stack/is_consecutive.py                              33     30     9%   23-37, 41-60
+algorithms/stack/is_sorted.py                                   16     15     6%   15-32
+algorithms/stack/longest_abs_path.py                            23     23     0%   36-65
+algorithms/stack/ordered_stack.py                               24     16    33%   7, 10, 13, 17-25, 28-30, 33, 36
+algorithms/stack/remove_min.py                                  16     15     6%   14-30
+algorithms/stack/simplify_path.py                               11     10     9%   19-28
+algorithms/stack/stack.py                                       82     53    35%   20, 23, 26-27, 30, 34, 38, 42, 46, 56-57, 60-65, 68-71, 74-78, 82-84, 91, 97-98, 104-105, 108-113, 116-119, 122-127, 130-132
+algorithms/stack/stutter.py                                     23     20    13%   18-26, 30-46
+algorithms/stack/switch_pairs.py                                35     32     9%   27-40, 44-66
+algorithms/stack/valid_parenthesis.py                           10      9    10%   12-22
+algorithms/streaming/misra_gries.py                             21     19    10%   34-56, 60
+algorithms/streaming/one_sparse_recovery.py                     30     27    10%   30-46, 51-54, 58-68
+algorithms/strings/add_binary.py                                14     13     7%   13-26
+algorithms/strings/atbash_cipher.py                             13     12     8%   12-27
+algorithms/strings/breaking_bad.py                              53     46    13%   29-36, 39-53, 65-66, 70-95
+algorithms/strings/caesar_cipher.py                             10      9    10%   11-19
+algorithms/strings/check_pangram.py                              6      5    17%   6-10
+algorithms/strings/contain_string.py                            11     10     9%   16-25
+algorithms/strings/count_binary_substring.py                    12     11     8%   22-33
+algorithms/strings/decode_string.py                             14     13     7%   25-38
+algorithms/strings/delete_reoccurring.py                         8      7    12%   11-17
+algorithms/strings/domain_extractor.py                           8      6    25%   15-23, 28
+algorithms/strings/encode_decode.py                             14     12    14%   13-16, 23-30
+algorithms/strings/first_unique_char.py                          9      8    11%   19-27
+algorithms/strings/fizzbuzz.py                                  21     17    19%   31-47, 51, 54-55
+algorithms/strings/group_anagrams.py                            13     12     8%   16-28
+algorithms/strings/int_to_roman.py                               6      5    17%   11-15
+algorithms/strings/is_palindrome.py                             51     41    20%   22-32, 53, 57, 60-65, 70-75, 80-88, 92-105
+algorithms/strings/is_rotated.py                                14     11    21%   13-16, 23-31
+algorithms/strings/judge_circle.py                               5      4    20%   17-25
+algorithms/strings/knuth_morris_pratt.py                        24     22     8%   21-44
+algorithms/strings/license_number.py                            10      9    10%   3-11
+algorithms/strings/longest_common_prefix.py                     38     30    21%   23-30, 33-38, 44-50, 56-58, 61-66
+algorithms/strings/longest_palindromic_substring.py             21     20     5%   19-44
+algorithms/strings/make_sentence.py                             10      8    20%   20-27
+algorithms/strings/merge_string_checker.py                      24     22     8%   16-26, 31-42
+algorithms/strings/min_distance.py                              24     21    12%   22, 28-32, 43-62
+algorithms/strings/multiply_strings.py                          19     17    11%   16-28, 32-35
+algorithms/strings/one_edit_distance.py                         22     20     9%   12-19, 23-35
+algorithms/strings/panagram.py                                   9      7    22%   30-36
+algorithms/strings/rabin_karp.py                                31     26    16%   6-18, 21-27, 30, 33-47
+algorithms/strings/repeat_string.py                             11     10     9%   14-24
+algorithms/strings/repeat_substring.py                           3      2    33%   24-25
+algorithms/strings/reverse_string.py                            18     14    22%   2-5, 8-14, 17-18, 21
+algorithms/strings/reverse_vowel.py                             12     11     8%   3-13
+algorithms/strings/reverse_words.py                             14     11    21%   3-6, 10-14, 18-20
+algorithms/strings/roman_to_int.py                              11      9    18%   8-15, 19-20
+algorithms/strings/rotate.py                                     8      6    25%   15-19, 22-23
+algorithms/strings/strip_url_params.py                          65     59     9%   16-68, 72-81, 86-95
+algorithms/strings/strong_password.py                           11     10     9%   33-43
+algorithms/strings/text_justification.py                        45     44     2%   40-89
+algorithms/strings/unique_morse.py                              14     11    21%   82-86, 89-94
+algorithms/strings/validate_coordinates.py                      22     18    18%   25-36, 40-45, 49
+algorithms/strings/word_squares.py                              20     18    10%   48-66
+algorithms/tree/avl/avl.py                                      77     77     0%   2-126
+algorithms/tree/b_tree.py                                      151    129    15%   26-27, 30, 35, 42-45, 48-61, 65-72, 75-89, 93-102, 105, 108-131, 134-155, 161-171, 177-187, 191-201, 204-216, 219-227, 230-238, 241-242, 245-251
+algorithms/tree/bin_tree_to_list.py                             28     28     0%   1-37
+algorithms/tree/binary_tree_paths.py                            13     13     0%   1-15
+algorithms/tree/construct_tree_postorder_preorder.py            42     35    17%   27-29, 45-74, 84-86, 94-102, 105-111
+algorithms/tree/deepest_left.py                                 25     25     0%   15-46
+algorithms/tree/fenwick_tree/fenwick_tree.py                    21     16    24%   24-25, 32-45, 53-62, 71-77
+algorithms/tree/invert_tree.py                                   8      8     0%   3-10
+algorithms/tree/is_balanced.py                                  12     12     0%   1-22
+algorithms/tree/is_subtree.py                                   19     19     0%   48-71
+algorithms/tree/is_symmetric.py                                 25     25     0%   23-52
+algorithms/tree/longest_consecutive.py                          15     15     0%   28-49
+algorithms/tree/lowest_common_ancestor.py                        8      8     0%   24-37
+algorithms/tree/max_height.py                                   33     33     0%   15-54
+algorithms/tree/max_path_sum.py                                 11     11     0%   1-13
+algorithms/tree/min_height.py                                   40     40     0%   1-54
+algorithms/tree/path_sum2.py                                    42     42     0%   22-71
+algorithms/tree/path_sum.py                                     35     35     0%   18-63
+algorithms/tree/pretty_print.py                                 10     10     0%   12-23
+algorithms/tree/same_tree.py                                     6      6     0%   10-15
+algorithms/tree/segment_tree/iterative_segment_tree.py          25     20    20%   28-31, 34-35, 38-42, 45-53
+algorithms/tree/traversal/inorder.py                            40     35    12%   9-11, 16-27, 31-38, 42-54
+algorithms/tree/traversal/level_order.py                        17     17     0%   21-37
+algorithms/tree/traversal/postorder.py                          31     27    13%   8-10, 14-29, 33-40
+algorithms/tree/traversal/preorder.py                           28     24    14%   10-12, 17-29, 33-40
+algorithms/tree/traversal/zigzag.py                             19     19     0%   23-41
+algorithms/tree/tree.py                                          5      5     0%   1-5
+algorithms/unix/path/full_path.py                                3      1    67%   6
+algorithms/unix/path/join_with_slash.py                          6      4    33%   14-18
+algorithms/unix/path/simplify_path.py                           11      8    27%   20, 23-29
+algorithms/unix/path/split.py                                    7      5    29%   17-23
+setup.py                                                         7      7     0%   1-11
+tests/test_automata.py                                          21     16    24%   9-44, 48
+tests/test_backtrack.py                                        194    150    23%   31-53, 59-60, 63-66, 69-70, 76-84, 88-95, 103-106, 109-124, 130-149, 152-173, 179-189, 192-200, 203-205, 208-213, 216-222, 227-239, 246-255, 261-265, 272-278, 284-299, 306-319, 325-337, 340-352, 358-366, 372-380, 383-391, 396
+tests/test_bfs.py                                               27     18    33%   13-24, 30-34, 42-57, 62
+tests/test_bit.py                                              134     99    26%   32, 35-38, 43-52, 57-66, 70-76, 80-86, 90-96, 100-106, 110-114, 118-126, 130-141, 145-151, 154-156, 161-165, 175-176, 180, 184, 189-192, 195, 198, 201, 204, 208-210, 213, 216-219, 222-225, 235-238, 247-249, 258-260, 264-270, 274
+tests/test_compression.py                                       48     31    35%   11-13, 16-20, 23-30, 33-36, 42, 46, 53-60, 63-70, 74
+tests/test_dfs.py                                               37     20    46%   15, 19, 23, 29-31, 37, 47-50, 56-61, 67-76, 80
+tests/test_dp.py                                               144     92    36%   26-27, 30-31, 36-37, 40-41, 46-47, 52, 55, 60-61, 66-68, 73-74, 77-78, 81-82, 94-102, 117, 122-123, 128-132, 138-139, 144-145, 150-151, 156-158, 164-186, 192-200, 204-212, 216-218, 221-223, 226-228, 231-233, 236-238, 241-243, 246-248, 257-259, 263
+tests/test_graph.py                                            141     87    38%   32-44, 49-61, 67-72, 77-88, 99-108, 111-120, 123-132, 143-153, 164-174, 179-186, 200-215, 232-243, 251-255, 262-266, 271-285, 289-302, 306-312, 315-321, 325-334, 342-351, 355-368
+tests/test_greedy.py                                            14      9    36%   9-17, 21
+tests/test_heap.py                                              36     25    31%   17-23, 28-31, 34-41, 46-51, 54-55, 58-64, 69
+tests/test_histogram.py                                         10      5    50%   8-12, 17
+tests/test_iterative_segment_tree.py                            60     43    28%   8-10, 19-30, 34-35, 38-39, 42-43, 46-47, 50-53, 56-59, 62-65, 68-71, 79-80, 89-93, 96-99
+tests/test_linkedlist.py                                       156    134    14%   18-19, 24-30, 36-45, 48-57, 60-73, 77-100, 103-108, 112-118, 122-141, 148-163, 167-168, 171-172, 175-176, 179-181, 184-186, 189-198, 201-211, 215
+tests/test_map.py                                              149    115    23%   15-17, 20-22, 25-27, 30-34, 38-41, 44-49, 52-56, 59-64, 67-71, 74-80, 83-90, 93-97, 102-104, 107-111, 114-118, 121-127, 130-135, 138-142, 145-147, 150-152, 157-160, 165-167, 172-175, 178-181, 186-187, 191
+tests/test_maths.py                                            257    174    32%   45-48, 51-54, 66-68, 71-73, 85-89, 102-105, 117-118, 130-131, 134-138, 141-145, 148-150, 153-154, 157-159, 162-166, 169-170, 173-174, 186, 189, 201-202, 205-206, 219-223, 235-239, 251-252, 255-256, 268-269, 285-289, 301, 314-316, 328, 349-350, 353-354, 366-371, 374-379, 391-392, 404-409, 421-424, 437-440, 452-456, 468-473, 485-488, 499-504, 516-523, 531-533, 540-542, 548-551, 554-557, 568-572, 575-578, 581-584, 587-593, 597
+tests/test_matrix.py                                            79     50    37%   21-41, 53-65, 79-93, 115-131, 151-170, 191-202, 215, 228, 242, 259, 272-342, 366-371, 377-383, 391
+tests/test_ml.py                                                16      9    44%   12-15, 24-32, 36, 40
+tests/test_monomial.py                                          99     84    15%   12-28, 34-66, 72-105, 112-124, 129-145, 149-161, 165-189, 195-201, 208-216, 220
+tests/test_polynomial.py                                        64     51    20%   14-50, 56-82, 86-96, 99-106, 112-127, 132-141, 146-157, 162-175
+tests/test_queues.py                                            60     49    18%   17-43, 46-72, 77-86, 90, 100-106, 110
+tests/test_search.py                                           114     97    15%   23-32, 35-44, 47-52, 55-60, 63-67, 70-74, 77-86, 89-97, 100-108, 111-115, 118-122, 125-139, 142-148, 153
+tests/test_set.py                                                5      1    80%   10
+tests/test_sort.py                                              57     30    47%   32-36, 41, 44, 48, 51, 54, 58, 61, 65-68, 72, 76, 79, 83, 86, 89, 93, 96, 99, 102, 105, 111, 122-126, 130
+tests/test_stack.py                                             85     69    19%   18-24, 28-30, 34-36, 40-42, 48-56, 61-65, 68-69, 74-103, 106-136, 141-150, 154
+tests/test_streaming.py                                         20     11    45%   12-14, 18-20, 25-27, 32-40
+tests/test_strings.py                                          282    171    39%   60-62, 74-76, 79, 82, 86-90, 103-104, 116, 128, 132, 144, 147, 160, 174-176, 189-190, 194-195, 199-200, 204-205, 209-210, 222-226, 229-233, 238-241, 244-247, 259-263, 275-277, 289, 292, 304-307, 319-321, 324-326, 338-339, 351, 354, 357, 360, 372, 384, 397-399, 436-438, 441-445, 457, 465-466, 469, 474-475, 480-481, 486-487, 492-493, 498-500, 505-507, 512-513, 518-526, 537-539, 543-545, 551-563, 569-570, 575-577, 589-592, 602-605, 618-621, 634-640, 644-650, 654-660, 664-670, 674-680, 684-690, 694-700, 709-728, 732
+tests/test_tree.py                                             122     95    22%   21-23, 29-31, 34-36, 39-41, 45-55, 62-65, 68, 72-78, 81-87, 90-100, 103-113, 120-143, 149-156, 159-166, 169-176, 180
+tests/test_unix.py                                              29     21    28%   13-19, 23-30, 34-42, 45-48
+------------------------------------------------------------------------------------------
+TOTAL                                                        10461   8847    15%
+
+=========================== short test summary info ============================
+ERROR tests/test_array.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+========================= 2 warnings, 1 error in 1.22s =========================

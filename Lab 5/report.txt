@@ -1,0 +1,2 @@
+(new_venv) set-iitgn-vm@set-iitgn-vm:~/Desktop/stt_lab6-7/lab5/algorithms$ git rev-parse HEAD
+cad4754bc71742c2d6fcbd3b92ae74834d359844
