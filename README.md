@@ -1,5 +1,8 @@
 # CS202: Software Tools & Techniques for CSE 🚀  
 
+_**Note** : Please find bandit analysis and other files of Lab 7-8 in the below OneDrive Link:_
+- https://iitgnacin-my.sharepoint.com/:f:/g/personal/22110187_iitgn_ac_in/EnECtzFbUNZKkBWY6aa8QJYBp6liTXfpuYRtJNMd1TwR6A?e=nsND4y
+
 Welcome to my CS202 repository! This is where I'll be tracking my progress, code, analysis, reports, and results from lab assignments conducted in this course.  
 
 ## 📌 Course Overview  
