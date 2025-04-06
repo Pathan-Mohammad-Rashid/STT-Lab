@@ -1,0 +1,5 @@
+Configuration,Average Time (s),Speedup
+Sequential,5.886666666666667,1.0
+pytest-xdist --dist=load,9.209999999999999,0.639160332971408
+pytest-xdist --dist=no,9.836666666666666,0.5984412063707218
+pytest-run-parallel (--parallel-threads=auto),54.20333333333334,0.10860340692454337

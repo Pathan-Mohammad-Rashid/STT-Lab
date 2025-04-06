@@ -1,0 +1,69 @@
+﻿Sequential Run :
+
+
+Days              : 0
+Hours             : 0
+Minutes           : 0
+Seconds           : 4
+Milliseconds      : 462
+Ticks             : 44626818
+TotalDays         : 5.16514097222222E-05
+TotalHours        : 0.00123963383333333
+TotalMinutes      : 0.07437803
+TotalSeconds      : 4.4626818
+TotalMilliseconds : 4462.6818
+
+Sequential Run :
+Days              : 0
+Hours             : 0
+Minutes           : 0
+Seconds           : 1
+Milliseconds      : 455
+Ticks             : 14553850
+TotalDays         : 1.68447337962963E-05
+TotalHours        : 0.000404273611111111
+TotalMinutes      : 0.0242564166666667
+TotalSeconds      : 1.455385
+TotalMilliseconds : 1455.385
+
+Sequential Run :
+Days              : 0
+Hours             : 0
+Minutes           : 0
+Seconds           : 1
+Milliseconds      : 420
+Ticks             : 14200094
+TotalDays         : 1.64352939814815E-05
+TotalHours        : 0.000394447055555556
+TotalMinutes      : 0.0236668233333333
+TotalSeconds      : 1.4200094
+TotalMilliseconds : 1420.0094
+
+Sequential Run :
+Days              : 0
+Hours             : 0
+Minutes           : 0
+Seconds           : 1
+Milliseconds      : 594
+Ticks             : 15948334
+TotalDays         : 1.84587199074074E-05
+TotalHours        : 0.000443009277777778
+TotalMinutes      : 0.0265805566666667
+TotalSeconds      : 1.5948334
+TotalMilliseconds : 1594.8334
+
+Sequential Run :
+Days              : 0
+Hours             : 0
+Minutes           : 0
+Seconds           : 1
+Milliseconds      : 453
+Ticks             : 14535336
+TotalDays         : 1.68233055555556E-05
+TotalHours        : 0.000403759333333333
+TotalMinutes      : 0.02422556
+TotalSeconds      : 1.4535336
+TotalMilliseconds : 1453.5336
+
+
+
