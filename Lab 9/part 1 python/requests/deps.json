@@ -1,0 +1,208 @@
+{
+    "__main__": {
+        "bacon": 0,
+        "imports": [
+            "requests"
+        ],
+        "name": "__main__",
+        "path": null
+    },
+    "charset_normalizer": {
+        "bacon": 2,
+        "imported_by": [
+            "requests"
+        ],
+        "name": "charset_normalizer",
+        "path": "/home/set-iitgn-vm/.local/lib/python3.10/site-packages/charset_normalizer/__init__.py"
+    },
+    "cryptography": {
+        "bacon": 2,
+        "imported_by": [
+            "cryptography",
+            "requests",
+            "urllib3.contrib.pyopenssl"
+        ],
+        "imports": [
+            "cryptography"
+        ],
+        "name": "cryptography",
+        "path": "/home/set-iitgn-vm/.local/lib/python3.10/site-packages/cryptography/__init__.py"
+    },
+    "requests": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "requests",
+            "requests.api",
+            "requests.utils"
+        ],
+        "imports": [
+            "charset_normalizer",
+            "cryptography",
+            "requests",
+            "requests.__version__",
+            "requests.api",
+            "requests.exceptions",
+            "requests.models",
+            "requests.packages",
+            "requests.sessions",
+            "requests.status_codes",
+            "requests.utils",
+            "urllib3",
+            "urllib3.contrib",
+            "urllib3.contrib.pyopenssl",
+            "urllib3.exceptions"
+        ],
+        "name": "requests",
+        "path": "/home/set-iitgn-vm/Desktop/Lab9/requests/src/requests/__init__.py"
+    },
+    "requests.__version__": {
+        "bacon": 2,
+        "imported_by": [
+            "requests",
+            "requests.utils"
+        ],
+        "name": "requests.__version__",
+        "path": "/home/set-iitgn-vm/Desktop/Lab9/requests/src/requests/__version__.py"
+    },
+    "requests.api": {
+        "bacon": 2,
+        "imported_by": [
+            "requests"
+        ],
+        "imports": [
+            "requests",
+            "requests.sessions"
+        ],
+        "name": "requests.api",
+        "path": "/home/set-iitgn-vm/Desktop/Lab9/requests/src/requests/api.py"
+    },
+    "requests.exceptions": {
+        "bacon": 2,
+        "imported_by": [
+            "requests",
+            "requests.models",
+            "requests.sessions",
+            "requests.utils"
+        ],
+        "imports": [
+            "urllib3",
+            "urllib3.exceptions"
+        ],
+        "name": "requests.exceptions",
+        "path": "/home/set-iitgn-vm/Desktop/Lab9/requests/src/requests/exceptions.py"
+    },
+    "requests.models": {
+        "bacon": 2,
+        "imported_by": [
+            "requests",
+            "requests.sessions"
+        ],
+        "imports": [
+            "requests.exceptions",
+            "requests.status_codes",
+            "requests.utils",
+            "urllib3",
+            "urllib3.exceptions"
+        ],
+        "name": "requests.models",
+        "path": "/home/set-iitgn-vm/Desktop/Lab9/requests/src/requests/models.py"
+    },
+    "requests.packages": {
+        "bacon": 2,
+        "imported_by": [
+            "requests"
+        ],
+        "name": "requests.packages",
+        "path": "/home/set-iitgn-vm/Desktop/Lab9/requests/src/requests/packages.py"
+    },
+    "requests.sessions": {
+        "bacon": 2,
+        "imported_by": [
+            "requests",
+            "requests.api"
+        ],
+        "imports": [
+            "requests.exceptions",
+            "requests.models",
+            "requests.status_codes",
+            "requests.utils"
+        ],
+        "name": "requests.sessions",
+        "path": "/home/set-iitgn-vm/Desktop/Lab9/requests/src/requests/sessions.py"
+    },
+    "requests.status_codes": {
+        "bacon": 2,
+        "imported_by": [
+            "requests",
+            "requests.models",
+            "requests.sessions"
+        ],
+        "name": "requests.status_codes",
+        "path": "/home/set-iitgn-vm/Desktop/Lab9/requests/src/requests/status_codes.py"
+    },
+    "requests.utils": {
+        "bacon": 2,
+        "imported_by": [
+            "requests",
+            "requests.models",
+            "requests.sessions"
+        ],
+        "imports": [
+            "requests",
+            "requests.__version__",
+            "requests.exceptions",
+            "urllib3"
+        ],
+        "name": "requests.utils",
+        "path": "/home/set-iitgn-vm/Desktop/Lab9/requests/src/requests/utils.py"
+    },
+    "urllib3": {
+        "bacon": 2,
+        "imported_by": [
+            "requests",
+            "requests.exceptions",
+            "requests.models",
+            "requests.utils",
+            "urllib3",
+            "urllib3.contrib.pyopenssl"
+        ],
+        "imports": [
+            "urllib3",
+            "urllib3.exceptions"
+        ],
+        "name": "urllib3",
+        "path": "/home/set-iitgn-vm/.local/lib/python3.10/site-packages/urllib3/__init__.py"
+    },
+    "urllib3.contrib": {
+        "bacon": 2,
+        "imported_by": [
+            "requests"
+        ],
+        "name": "urllib3.contrib",
+        "path": "/home/set-iitgn-vm/.local/lib/python3.10/site-packages/urllib3/contrib/__init__.py"
+    },
+    "urllib3.contrib.pyopenssl": {
+        "bacon": 2,
+        "imported_by": [
+            "requests"
+        ],
+        "imports": [
+            "cryptography",
+            "urllib3"
+        ],
+        "name": "urllib3.contrib.pyopenssl",
+        "path": "/home/set-iitgn-vm/.local/lib/python3.10/site-packages/urllib3/contrib/pyopenssl.py"
+    },
+    "urllib3.exceptions": {
+        "bacon": 2,
+        "imported_by": [
+            "requests",
+            "requests.exceptions",
+            "requests.models",
+            "urllib3"
+        ],
+        "name": "urllib3.exceptions",
+        "path": "/home/set-iitgn-vm/.local/lib/python3.10/site-packages/urllib3/exceptions.py"
+    }
+}
