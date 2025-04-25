@@ -1,0 +1,10 @@
+C:\Users\Rashid\source\repos\Lab12_AlarmWinForms\bin\Debug\Lab12_AlarmWinForms.exe.config
+C:\Users\Rashid\source\repos\Lab12_AlarmWinForms\bin\Debug\Lab12_AlarmWinForms.exe
+C:\Users\Rashid\source\repos\Lab12_AlarmWinForms\bin\Debug\Lab12_AlarmWinForms.pdb
+C:\Users\Rashid\source\repos\Lab12_AlarmWinForms\obj\Debug\Lab12_AlarmWinForms.csproj.AssemblyReference.cache
+C:\Users\Rashid\source\repos\Lab12_AlarmWinForms\obj\Debug\Lab12_AlarmWinForms.Form1.resources
+C:\Users\Rashid\source\repos\Lab12_AlarmWinForms\obj\Debug\Lab12_AlarmWinForms.Properties.Resources.resources
+C:\Users\Rashid\source\repos\Lab12_AlarmWinForms\obj\Debug\Lab12_AlarmWinForms.csproj.GenerateResource.cache
+C:\Users\Rashid\source\repos\Lab12_AlarmWinForms\obj\Debug\Lab12_AlarmWinForms.csproj.CoreCompileInputs.cache
+C:\Users\Rashid\source\repos\Lab12_AlarmWinForms\obj\Debug\Lab12_AlarmWinForms.exe
+C:\Users\Rashid\source\repos\Lab12_AlarmWinForms\obj\Debug\Lab12_AlarmWinForms.pdb
